@@ -13,14 +13,14 @@ body {
 
 .section-one {
    height: 100vh;
-   background: #EB3349;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+   background: #AA076B;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to bottom, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to bottom, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .section-one .nav {
-    border-style: dashed;
+    height: 2em;
+    width: 100%;
 }
 
 .section-one .nav ul {
@@ -32,4 +32,65 @@ background: linear-gradient(to bottom, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, 
 .nav ul li {
     display: inline;
     margin-right: 20px;
+    float: right;
+    margin: 1em;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    font-size: 22px;
+}
+
+.nav span {
+    float: left;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 12em;
+}
+
+.intro h1 {
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 5px;
+    padding-bottom: 2em;
+}
+
+.intro p {
+    font-style: italic;
+    font-size: 19px;
+}
+
+.section-two {
+    height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        margin: 2em .5em;
+}
+
+.section-two .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about img {
+    border-radius: 50%;
+}
+
+.section-two .me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

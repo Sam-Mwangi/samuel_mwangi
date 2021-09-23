@@ -94,3 +94,66 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.section-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+}
+
+.projects .img {
+    margin: 1em .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.section-four {
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    background: rgb(241, 143, 143);
+}
+
+.section-four h1 {
+    text-align: center;
+    margin-top: 3em;
+    color: rgb(37, 127, 206);
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.section-four ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.section-four ul li {
+    margin: 1em .5em;
+}
+
+.footer {
+    text-align: center;
+    font-size: 30px;
+    background: rgb(241, 143, 143);
+}
